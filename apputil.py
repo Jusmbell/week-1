@@ -6,8 +6,17 @@ def palindrome(word):
 # Example
 print(palindrome("Racecar"))
 
-# Excersise 2
+# Exercise 2
 def parentheses(sequence):
+    """
+    Checks if the parentheses in the input sequence are balanced.
+
+    Parameters:
+        sequence (str): The string to check for balanced parentheses. Non-parentheses characters are ignored.
+
+    Returns:
+        bool: True if parentheses are balanced, False otherwise.
+    """
     balance = 0
     for char in sequence:
         if char == '(':
