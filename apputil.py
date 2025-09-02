@@ -7,3 +7,17 @@ def palindrome(word):
 print(palindrome("Racecar"))
 
 # Excersise 2
+def parentheses(sequence):
+    balance = 0
+    for char in sequence:
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        if balance < 0:
+            return False
+    return balance == 0
+# Example
+print(parentheses("((()))"))
+print(parentheses("(blah)()()()"))
+print(parentheses("((((((())"))
